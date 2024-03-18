@@ -1,0 +1,6 @@
+tests/sciencemesh/tls
+tests/sciencemesh/temp
+tests/sciencemesh/owncloud-sciencemesh
+tests/sciencemesh/nextcloud-sciencemesh
+tests/sciencemesh/cernbox-web-sciencemesh
+tests/sciencemesh/wopi-sciencemesh
