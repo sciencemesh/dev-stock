@@ -5,7 +5,7 @@ ENV_ROOT=$(pwd)
 export ENV_ROOT=${ENV_ROOT}
 
 docker run --rm  -it                                    \
-  -v "${ENV_ROOT}/../../reva:/reva"                          \
+  -v "${ENV_ROOT}/../../../reva:/reva"                          \
   -v "${ENV_ROOT}/scripts/build-reva.sh:/build-reva.sh" \
   --workdir /reva                                       \
   --entrypoint /bin/bash                                \

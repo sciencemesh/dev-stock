@@ -9,7 +9,7 @@ Prerequisites: bash, git, Docker.
 # preparation
 cd examples/sciencemesh
 ./init.sh  # This will prepare the CERNBox, Nextcloud, and ownCloud-10 images
-./init-reva.sh   # This will build reva and revad in the current repo and handle a few other prerequisites
+./scripts/init-reva.sh   # This will build reva and revad in the current repo and handle a few other prerequisites
 
 # launch test scenario: to be executed as root. The available scenarios cover all combinations of ownCloud (o),
 # Nextcloud (n), and CERNBox (c) as EFSSs, with reva (r) as connector, and have the form xrrx.sh, x = {o, n, c},
