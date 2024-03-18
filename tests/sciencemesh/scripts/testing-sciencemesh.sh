@@ -209,7 +209,7 @@ docker run --detach --network=testnet                                         \
   --name="reva${EFSS1}1.docker"                                               \
   -e HOST="reva${EFSS1}1"                                                     \
   -p 8080:80                                                                  \
-  -v "${ENV_ROOT}/../..:/reva"                                                \
+  -v "${ENV_ROOT}/../../reva:/reva"                                                \
   -v "${ENV_ROOT}/revad:/configs/revad"                                       \
   -v "${ENV_ROOT}/cernbox:/configs/cernbox"                                   \
   -v "${ENV_ROOT}/temp/${EFSS1}-1-tls:/etc/tls"                               \
@@ -222,7 +222,7 @@ docker run --detach --network=testnet                                         \
   --name="reva${EFSS2}2.docker"                                               \
   -e HOST="reva${EFSS2}2"                                                     \
   -p 8180:80                                                                  \
-  -v "${ENV_ROOT}/../..:/reva"                                                \
+  -v "${ENV_ROOT}/../../reva:/reva"                                                \
   -v "${ENV_ROOT}/revad:/configs/revad"                                       \
   -v "${ENV_ROOT}/cernbox:/configs/cernbox"                                   \
   -v "${ENV_ROOT}/temp/${EFSS2}-2-tls:/etc/tls"                               \

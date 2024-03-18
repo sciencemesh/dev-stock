@@ -21,7 +21,7 @@ docker run --detach --name=rclone.docker --network=testnet  rclone/rclone rcd \ 
 docker run --detach --network=testnet                                         \
   --name="revad1.docker"                                                      \
   -e HOST="revad1"                                                            \
-  -v "${ENV_ROOT}/../..:/reva"                                                \
+  -v "${ENV_ROOT}/../../reva:/reva"                                                \
   -v "${ENV_ROOT}/revad:/configs/revad"                                       \
   -v "${ENV_ROOT}/tls:/etc/tls"                                               \
   -v "${ENV_ROOT}/scripts/reva-run.sh:/usr/bin/reva-run.sh"                   \
@@ -34,7 +34,7 @@ docker run --detach --network=testnet                                         \
 docker run --detach --network=testnet                                         \
   --name="revad2.docker"                                                      \
   -e HOST="revad2"                                                            \
-  -v "${ENV_ROOT}/../..:/reva"                                                \
+  -v "${ENV_ROOT}/../../reva:/reva"                                                \
   -v "${ENV_ROOT}/revad:/configs/revad"                                       \
   -v "${ENV_ROOT}/tls:/etc/tls"                                               \
   -v "${ENV_ROOT}/scripts/reva-run.sh:/usr/bin/reva-run.sh"                   \
