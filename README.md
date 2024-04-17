@@ -4,4 +4,4 @@ cd dev-stock
 git submodule update --init
 ```
 
-[Detailed instructions](tests/sciencemesh/README.md)
+[Detailed instructions](sciencemesh/README.md)

@@ -49,7 +49,7 @@ TAG_WOPISERVER=master
 [ ! -d "cernbox-web-sciencemesh" ] &&
     mkdir cernbox-web-sciencemesh &&                                            \
     cd cernbox-web-sciencemesh &&                                               \
-    tar xf ../cernbox/web-bundle.tgz &&                                         \
+    tar xf ../cernbox-web-bundle.tgz &&                                         \
     cd web/js && sed -i "s|sciencemesh\.cesnet\.cz\/iop|meshdir\.docker|"       \
            web-app-science*mjs &&                                               \
     rm web-app-science*mjs.gz && gzip web-app-science*mjs &&                    \
